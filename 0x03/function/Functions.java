@@ -12,31 +12,15 @@ public class Functions {
         return userService.save(user);
     }
 
-    // Arguments
-    //A
     public void saveUser(User user){};
-    //B
-    public void saveUser(String userName, User user, Date date, boolean isAdmin){};
-
-    //  No side effects
+    
     public User saveUser(User user){
-        // if statement should be avoided, why saveUser action is changing role of a user?
-        if(user.isAdmin){
-            user.setRole(user);
-        }
         return userRepository.save(user);
     }
-    // Evite duplicados, extraindo para novos métodos
-    //A
-    public Environment getEnvironment(){
-        String version = versionService.getVersion();
-        return environmentService.getEnvironment(version);
+    public void setRole(User user){
+        user.setRole(user);
     }
-    public Release getRelease(){
-        String version = versionService.getVersion();
-        return releaseService.getRelease(version);
-    }
-    //B
+
     public Environment getEnvironment(){
         return environmentService.getEnvironment(getVersion());
     }
