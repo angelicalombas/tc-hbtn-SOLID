@@ -9,10 +9,10 @@ public class Name {
 
     public URL url;
 
-    public class TableRepresenter {};
-    public void saveCar(){};
+    public class TableRepresent{};
+    public void car(){};
 
-    public saveUser(){}; createAccount(){}; generateContract(){};
+    public saveUser(){}; saveAccount(){}; saveContract(){};
 
     public final int DAYS_IN_YEAR = 360;
     public final int HOURS_IN_WEEK = 168;
