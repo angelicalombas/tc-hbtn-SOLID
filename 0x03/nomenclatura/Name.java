@@ -9,8 +9,8 @@ public class Name {
 
     public URL url;
 
-    public class TableRepresent{};
-    public void car(){};
+    public class TableRepresenter {};
+    public void saveCar(){};
 
     public saveUser(){}; saveAccount(){}; saveContract(){};
 
