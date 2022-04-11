@@ -1,10 +1,10 @@
 class User {
 
-    int IdUser;
+    int id;
 
     String Descricao;
 
-    final static int IDADEMINIMA = 18;
+    final static int IDADE_MINIMA = 18;
 
     public getUsers() { return [];}
 
